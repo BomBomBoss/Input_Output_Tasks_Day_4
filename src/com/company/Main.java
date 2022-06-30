@@ -44,11 +44,11 @@ public class Main {
         System.out.println("Last modified time of " + secondFile.getFileName() + " is " + Files.getLastModifiedTime(secondFile));
 
         //task 8
-//        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-//        String input;
-//        while(!(input= reader.readLine()).equalsIgnoreCase("stop")) {
-//            System.out.println("You've entered - " + input);
-//        }
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String input;
+        while(!(input= reader.readLine()).equalsIgnoreCase("stop")) {
+            System.out.println("You've entered - " + input);
+        }
 
         //task 9
         long bytes = Files.size(secondFile);

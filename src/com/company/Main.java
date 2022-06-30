@@ -44,9 +44,9 @@ public class Main {
         System.out.println("Last modified time of " + secondFile.getFileName() + " is " + Files.getLastModifiedTime(secondFile));
 
         //task 8
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader reader1 = new BufferedReader(new InputStreamReader(System.in));
         String input;
-        while(!(input= reader.readLine()).equalsIgnoreCase("stop")) {
+        while(!(input= reader1.readLine()).equalsIgnoreCase("stop")) {
             System.out.println("You've entered - " + input);
         }
 
@@ -99,7 +99,6 @@ public class Main {
         //task 18
         //took resulted StringBuilder from task 12--> StringBuilder sb = new StringBuilder()
         String [] longestWord = sb.toString().split(" ");
-        System.out.println(Arrays.toString(longestWord));
         TreeMap<Integer,String> treeMap = new TreeMap<>();
         for (String s : longestWord) treeMap.put(s.length(),s);
         System.out.println(treeMap.lastEntry().getValue());
